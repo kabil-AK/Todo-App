@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+   
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body >
+<nav class="bg-white min-h-screen flex items-center justify-center ">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-screen-md w-full">
+        <h1 class="text-2xl font-bold text-center mb-6">Income Expense Calculator</h1>
+
+        
+        <div class="grid grid-cols-3 gap-4 mb-6 text-center">
+            <div>
+                <h3 class="text-lg font-bold">Total Income</h3>
+                <p id="total-income" class="text-xl font-bold text-green-500">$0.00</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold">Total Expense</h3>
+                <p id="total-expense" class="text-xl font-bold text-red-500">$0.00</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold">Balance</h3>
+                <p id="balance" class="text-xl font-bold text-yellow-500">$0.00</p>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2 mb-4">
+            <input type="text" id="description" placeholder="Enter description" class="w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200">
+            <input type="number" id="amount" placeholder="Enter amount" class="w-24 p-2 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200">
+            <select id="type" class="p-2 border border-gray-300 rounded-md">
+                <option  value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="add-btn" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500">Add</button>
+        </div>
+        <h2 class="text-xl font-bold mb-4">Transaction History :</h2>
+        <ul id="transaction-list" class="space-y-3"></ul>
+
+    </div>
+    </nav>
+    
+
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>
